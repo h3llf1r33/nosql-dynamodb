@@ -1,17 +1,17 @@
-# @denis_bruns/nosql-dynamodb-service
+# @denis_bruns/nosql-dynamodb
 
 > **A robust DynamoDB service for clean architecture projects, featuring filter expressions, pagination, and injection-safe validations.**
 
-[![NPM Version](https://img.shields.io/npm/v/@denis_bruns/nosql-dynamodb-service?style=flat-square&logo=npm)](https://www.npmjs.com/package/@denis_bruns/nosql-dynamodb-service)
+[![NPM Version](https://img.shields.io/npm/v/@denis_bruns/nosql-dynamodb?style=flat-square&logo=npm)](https://www.npmjs.com/package/@denis_bruns/nosql-dynamodb)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-[![GitHub](https://img.shields.io/badge/GitHub--181717.svg?style=flat-square&logo=github)](https://github.com/h3llf1r33/nosql-dynamodb-service)
+[![GitHub](https://img.shields.io/badge/GitHub--181717.svg?style=flat-square&logo=github)](https://github.com/h3llf1r33/nosql-dynamodb)
 
 ---
 
 ## Overview
 
-`@denis_bruns/nosql-dynamodb-service` provides a **DynamoDB-specific** data service built around clean architecture principles. It extends the functionality of [`@denis_bruns/database-core`](https://www.npmjs.com/package/@denis_bruns/database-core) to offer:
+`@denis_bruns/nosql-dynamodb` provides a **DynamoDB-specific** data service built around clean architecture principles. It extends the functionality of [`@denis_bruns/database-core`](https://www.npmjs.com/package/@denis_bruns/database-core) to offer:
 
 - **Type-safe** query building via `DynamoDBExpressionBuilder`
 - **Partition key** and **filter** expression support
@@ -52,13 +52,13 @@ If you’re looking to unify your **business logic** and **data access** in a cl
 With **npm**:
 
 ```bash
-npm install @denis_bruns/nosql-dynamodb-service
+npm install @denis_bruns/nosql-dynamodb
 ```
 
 Or with **yarn**:
 
 ```bash
-yarn add @denis_bruns/nosql-dynamodb-service
+yarn add @denis_bruns/nosql-dynamodb
 ```
 
 You’ll also need the AWS DynamoDB client:
@@ -78,7 +78,7 @@ import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import {
 fetchWithFiltersAndPaginationDynamoDb,
 DynamoDBService,
-} from "@denis_bruns/nosql-dynamodb-service";
+} from "@denis_bruns/nosql-dynamodb";
 import { IGenericFilterQuery } from "@denis_bruns/core";
 
 async function demo() {
@@ -164,7 +164,7 @@ filters: [
 
 ## Contributing
 
-Contributions are welcome! If you find a bug or have a feature request, feel free to open an issue or submit a pull request on [GitHub](https://github.com/h3llf1r33/nosql-dynamodb-service).
+Contributions are welcome! If you find a bug or have a feature request, feel free to open an issue or submit a pull request on [GitHub](https://github.com/h3llf1r33/nosql-dynamodb).
 
 ---
 
